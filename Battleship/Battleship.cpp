@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include "GameClass.h"
-#include "GameGraphics.h"
+#include "GameGraphics.h"  
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -48,7 +48,7 @@ int gameLoop(battleship b)
     text.setString("TEST");
 
     //Init windows
-    sf::RenderWindow window(sf::VideoMode(w, h), "Battleship", sf::Style::Fullscreen);
+    sf::RenderWindow window(sf::VideoMode(w, h), "Battleship");
     //sf::Window window;
     sf::View view;
     view.setSize(w, h);
